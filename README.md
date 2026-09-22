@@ -29,17 +29,21 @@ Telas
 
 ## Backend e Banco
 
+Entidades e relacionamentos
+
+* Cliente → pode ter vários veículos.
+* Veículo → pertence a um cliente.
+* Mecânico → realiza os serviços.
+* Serviço → é realizado por um mecânico.
+* Agendamento → relaciona o cliente, o veículo, o serviço e o mecânico.
+
 Controllers
 
 * Cliente
 * Veículo
 * Agendamento
-
-Entidades e relacionamentos
-
-* Cliente → Veículo: um cliente pode ter vários veículos.
-* Cliente → Agendamento: um cliente pode ter vários agendamentos.
-* Veículo → Agendamento: um veículo pode ter vários agendamentos.
+* Serviço
+* Mecânico
 
 Rotas
 
@@ -56,6 +60,20 @@ Veículos
 * POST /veiculos
 * PUT /veiculos/:id
 * DELETE /veiculos/:id
+
+Serviços
+
+* GET /servicos
+* POST /servicos
+* PUT /servicos/:id
+* DELETE /servicos/:id
+
+Mecânicos
+
+* GET /mecanicos
+* POST /mecanicos
+* PUT /mecanicos/:id
+* DELETE /mecanicos/:id
 
 Agendamentos
 
