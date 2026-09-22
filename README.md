@@ -1,28 +1,65 @@
-# Mecanica-Isabelle-livia
-Descritivo do que a aplicação precisa fazer
-Responsáveis: Isabelle; Lívia
+Mecanica-Isabelle-livia
+
+## Descritivo do que a aplicação precisa fazer
+
+* Cadastrar clientes.
+* Cadastrar veículos.
+* Associar veículos aos clientes.
+* Cadastrar agendamentos.
+* Mostrar os agendamentos por dia.
+* Permitir buscar clientes.
+* Permitir editar e excluir informações.
 
 ## Front
-  - index.html.
-  -pagina de login.
-  -pagina de autenticação.
 
+Telas
+
+* Tela de Clientes
+* Tela de Veículos
+* Tela de Agendamentos
+* Tela Principal
+
+## Comportamentos
+
+* Cadastrar
+* Buscar
+* Editar
+* Excluir
+* Visualizar
 
 ## Backend e Banco
-Lista dos Controllers
--Cliente Controller.
--Agendamentos Controller.
--Veiculo Controllers.
--Serviço controler.
-Lista das entidades e seus Relacionamnetos
-- Um cliente pode ter vários veiculos.
-- Cliente pode fazer vários agendamentos.
-- Um veiculo pode ter varios agendamentos.
-- Um agendamento tem um serviço.
 
-Lista de rotas
--(get, get, post, delete)Cliente listar clientes e buscar o cliente e cadastrar cliente
+Controllers
 
- -(get, get, post, delete)listar veiculo, cadratar um veiculo
- 
- -(get, get, post, delete)agendar, listar agendamentos
+* Cliente
+* Veículo
+* Agendamento
+
+Entidades e relacionamentos
+
+* Cliente → Veículo: um cliente pode ter vários veículos.
+* Cliente → Agendamento: um cliente pode ter vários agendamentos.
+* Veículo → Agendamento: um veículo pode ter vários agendamentos.
+
+Rotas
+
+Clientes
+
+* GET /clientes
+* POST /clientes
+* PUT /clientes/:id
+* DELETE /clientes/:id
+
+Veículos
+
+* GET /veiculos
+* POST /veiculos
+* PUT /veiculos/:id
+* DELETE /veiculos/:id
+
+Agendamentos
+
+* GET /agendamentos
+* POST /agendamentos
+* PUT /agendamentos/:id
+* DELETE /agendamentos/:id
